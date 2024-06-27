@@ -15,7 +15,6 @@ def print_string(string):
 
 @app.route('/count/<int:num>')
 def count(num):
-    # Corrected to use newlines instead of <br> tags
     return '\n'.join([str(i) for i in range(num)]) + '\n'
 
 @app.route('/math/<int:num1>/<string:operation>/<int:num2>')
